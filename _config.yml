@@ -1,5 +1,8 @@
 theme: jekyll-theme-slate
 github:
   repository_url: https://github.com/siloutil/siloutil
+  is_project_page: true
+  owner_name: Niklas Donocik
+  owner_url: https://github.com/toxciq-math
 title: siloutil
 description:  You can't change physics, but you can change your visualization
