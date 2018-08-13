@@ -6,5 +6,3 @@ github:
   owner_url: https://github.com/toxciq-math
 title: siloutil
 description:  You can't change physics, but you can change your visualization
-plugins:
-  - jekyll-seo-tag
