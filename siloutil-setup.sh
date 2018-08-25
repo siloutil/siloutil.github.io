@@ -26,8 +26,8 @@ export PATH=$gcc_dir/gcc/bin:$PATH
 
 ## In case gcc forgets its libraries
 export LD_LIBRARY_PATH=\
-$gcc_dir/gmp/lib/:\
-$gcc_dir/mpc/lib/:\
+$gcc_dir/gmp/lib:\
+$gcc_dir/mpc/lib:\
 $gcc_dir/mpfr/lib:\
 $gcc_dir/gcc/lib64:\
 $gcc_dir/gcc/lib
