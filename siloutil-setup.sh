@@ -43,6 +43,8 @@ export CPPFLAGS="-fPIC"
 export CXXFLAGS="-fPIC"
 export HDF5TestExpress=0
 
+export LIBS="-ldl" 
+
 ## Building zlib
 printf "Downloading Zlib .....................................................\
 ..... "
@@ -90,9 +92,11 @@ printf "Downloading SILO .....................................................\
 ..... "
 (git clone https://github.com/siloutil/silo)\
  > $prefix/thirdparty/log/silo-0_download.log 2>&1
+printf "done\n"
 cd silo
 printf "Configuring ........ "
-(./configure --disable-fortran\
+(./configure\
+  --disable-fortran\
   --disable-shared\
   --with-zlib=$prefix/thirdparty/zlib/include,$prefix/thirdparty/zlib/lib\
   --with-hdf5=$prefix/thirdparty/hdf5/include,$prefix/thirdparty/hdf5/lib\
