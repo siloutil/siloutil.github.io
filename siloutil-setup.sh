@@ -17,19 +17,30 @@ rm -rf silo
 rm -rf boost
 rm -rf $prefix/thirdparty
 
+## Make directories
 mkdir $prefix/thirdparty
 mkdir $prefix/thirdparty/log
 
-export PATH=/home/niklas/gcc/gcc/bin:$PATH
-export AR=$gcc_dir/gcc/bin/gcc-ar$gcc_suff
-export CC=$gcc_dir/gcc/bin/gcc$gcc_suff
-export CXXCPP="$gcc_dir/gcc/bin/g++$gcc_suff -E"
-export CPP="$gcc_dir/gcc/bin/g++$gcc_suff -E"
-export CXX=$gcc_dir/gcc/bin/g++$gcc_suff
+## Path to gcc bin
+export PATH=$gcc_dir/gcc/bin:$PATH
+
+## In case gcc forgets its libraries
+export LD_LIBRARY_PATH=\
+$gcc_dir/gmp/lib/:\
+$gcc_dir/mpc/lib/:\
+$gcc_dir/mpfr/lib:\
+$gcc_dir/gcc/lib64:\
+$gcc_dir/gcc/lib
+
+## gcc tools
+export AR=gcc-ar$gcc_suff
+export CC=gcc$gcc_suff
+export CXX=g++$gcc_suff
+export CXXCPP="g++$gcc_suff -E"
+export CPP="g++$gcc_suff -E"
 export CFLAGS="-fPIC"
-export LD_LIBRARY_PATH=$gcc_dir/gcc/lib:$gcc_dir/gmp/lib:$gcc_dir/mpc/lib:\
-$gcc_dir/mpfr/lib
-export LIBS="-ldl"
+export CPPFLAGS="-fPIC"
+export CXXFLAGS="-fPIC"
 export HDF5TestExpress=0
 
 ## Building zlib
@@ -95,6 +106,7 @@ cd tests
 cd ..
 printf "installing ....... "
 (make install) > $prefix/thirdparty/log/silo-4_install.log 2>&1
+printf "done\n"
 cd ..
 rm -rf silo
 
@@ -107,6 +119,7 @@ printf "Downloading boost ....................................................\
 printf "done\n"
 cd boost
 printf "Configuring ........ "
+rm -rf $prefix/thirdparty/boost
 mkdir $prefix/thirdparty/boost
 (./bootstrap.sh --with-toolset=gcc\
   --libdir=$prefix/thirdparty/boost/lib\
@@ -116,10 +129,12 @@ mkdir $prefix/thirdparty/boost
 printf "building ........ "
 (./b2 install -q\
   link=static\
+  cxxflags=-fPIC\
   --libdir=$prefix/thirdparty/boost/lib\
   --includedir=$prefix/thirdparty/boost/include\
   --toolset=gcc-7.3
 ) > $prefix/thirdparty/log/boost-2_make.log 2>&1
+## Tests, because easy isn't boost-ish
 printf "installing ....... checking ........ "
 (
 echo "Running test for filesystem library"

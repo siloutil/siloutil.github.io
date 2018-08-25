@@ -2,7 +2,6 @@
 ## Dependencies gcc g++ make m4 gcc-multilib autogen
 
 ## Setup
-#prefix=$PWD
 prefix=/home/niklas/gcc # Directory to use
 proc_make=4		# Processes to use for compiling (usually 1.5...2
 			#                                 number of processors)
