@@ -297,6 +297,7 @@ em,cite{
 strong{
 	font-weight:bold
 }
+/*
 img{
 	position:relative;
 	margin:0 auto;
@@ -318,6 +319,7 @@ p img{
 	text-align:center;
 	border:none
 }
+*/
 pre,code{
 	color:#222;
 	background-color:#fff;
