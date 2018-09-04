@@ -44,6 +44,14 @@
                   <a class="nav-link" href="/">Home</a>
                 {% endif %}
                 </li>
+                {% if page.url contains "/manual" %}
+                <li class="nav-item active">
+                  <a class="nav-link" href="/manual">Manual and Examples <span class="sr-only">(current)</span></a>
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="/manual">Manual and Examples</a>
+                {% endif %}
+                </li>
                 {% if page.url contains "/doc" %}
                 <li class="nav-item active">
                   <a class="nav-link" href="/doc">Code reference <span class="sr-only">(current)</span></a>
