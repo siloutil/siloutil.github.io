@@ -578,3 +578,8 @@ form{
 .tipue_search_content_url{
 	display: none !important;
 }
+
+.tipue_search_content_text {
+    display: inline-block !important;
+    margin-left: 1em !important;
+}
