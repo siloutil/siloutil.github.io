@@ -569,4 +569,7 @@ form{
 		max-width:320px;
 		font-size:11px
 	}
+	.nav-link {
+		padding-left: 0px;
+	}
 }
