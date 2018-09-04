@@ -1,4 +1,6 @@
 theme: jekyll-theme-slate
+plugins:
+  - jekyll-sitemap
 github:
   repository_url: https://github.com/siloutil/siloutil
   is_project_page: true
