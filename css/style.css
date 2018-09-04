@@ -570,6 +570,6 @@ form{
 		font-size:11px
 	}
 	.nav-link {
-		padding-left: 0px;
+		padding-left: 0px !important;
 	}
 }
