@@ -574,3 +574,7 @@ form{
 .nav-link {
 	padding-left: 0px !important;
 }
+
+.tipue_search_content_url{
+	display: none !important;
+}
