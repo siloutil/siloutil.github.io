@@ -7,3 +7,9 @@ github:
   owner_mail: siloutil@donocik.name
 title: siloutil
 description:  You can't change physics, but you can change your visualization
+# Tipue search settings
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [search.html]
