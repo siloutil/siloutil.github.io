@@ -616,7 +616,11 @@ form{
     width: 25%;
     float: left;
     background-color: white;
-    padding: 5%;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-right: 5%;
     margin-bottom: 5%;
 
