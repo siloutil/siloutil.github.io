@@ -28,7 +28,7 @@ Version number of the hook, adheres to semantic versioning
 	version = [1, 0, 0]
 ```
 
-<p>div style="text-align: right"><a href="#top">Back to top</a></div></p>
+<div style="text-align: right"><p><a href="#top">Back to top</a></p></div>
 
 ---
 ### `__init__` {#classsiloutil_1_1plain_1a48f56910eb6ca2849446a22503e98b7b}
