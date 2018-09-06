@@ -17,9 +17,12 @@ Member | Type | Description
 [`dummy`](#classsiloutil_1_1plain_1a8dae8631d317b04899f568bf5c0adb64)| function |Dummy function. 
 
 ### version {#classsiloutil_1_1plain_1a22961651ba4cf16cb567de62fa45a7a1}
-Type:
-> list
-
+<dl>
+  <dt>Type</dt>
+  <dd>list</dd>
+  <dt>Initialization</dt>
+  <dd>[1,0,0]</dd>
+</dl>
 - Initialization: [1,0,0]
 - Protection:     public
 - Static:         yes
