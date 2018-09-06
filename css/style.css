@@ -607,6 +607,7 @@ form{
     margin-left: 1em !important;
 }
 .toc {
+    width: 25%;
     border: 2px solid black;
     padding: 25px;
 }
