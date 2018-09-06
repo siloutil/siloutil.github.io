@@ -18,14 +18,10 @@ Member | Type | Description
 	<dt>Protection</dt><dd>public</dd>
 	<dt>Static</dt><dd>yes</dd>
 </dl>
-<details><summary>Code (click to extend)</summary>
 
 ```python
 	version = [1, 0, 0]
-
 ```
-</details>
-
 ### `__init__` {#classsiloutil_1_1plain_1a48f56910eb6ca2849446a22503e98b7b}
 <dl>
 </dl>
