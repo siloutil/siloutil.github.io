@@ -611,5 +611,7 @@ form{
     float: left;
     border: 2px solid black;
     padding: 5%;
-    margin: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
 }
