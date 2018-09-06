@@ -570,6 +570,9 @@ form{
 	code,pre{
 		font-size:11px
 	}
+	.toc {
+		width:100%;
+	}
 }
 @media screen and (max-width: 320px){
 	body{
