@@ -69,10 +69,10 @@
           </nav>
 
     <div id="tipue_search_content" class="inner"></div>
-    {% include toc.html html=content h_min=2 h_max=2  class='inner.toc' %}
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
+    <div class="inner">{% include toc.html html=content h_min=2 h_max=2  class='toc' %}</div>
+    <section id="main_content" class="inner">
+      {{ content }}
+    </section>
   </div>
 
   <!--  <form action="{{ page.url | relative_url }}">
