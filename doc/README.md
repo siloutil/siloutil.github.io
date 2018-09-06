@@ -18,7 +18,7 @@ Member | Type | Description
 
 ### version {#classsiloutil_1_1plain_1a22961651ba4cf16cb567de62fa45a7a1}
 Type:
-: list
+> list
 
 - Initialization: [1,0,0]
 - Protection:     public
