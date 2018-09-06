@@ -1,7 +1,7 @@
 # `siloutil::plain`
-This class implements and supplements function from src/hooks/plain. 
+This class implements and supplements function from <nobr>src/hooks/plain</nobr>. 
 
-Found in file: <nobr>siloutil/python\_package/siloutil/\_\_init\_\_.py</nobr>
+Found in file: <nobr>siloutil/python\_package/siloutil/__init__.py</nobr>
 
 ---
 ## Public Members
