@@ -36,4 +36,4 @@ Examples
 .
 
 .
-Anchro{#anchor}
+Anchro {#anchor}
