@@ -1,7 +1,7 @@
 # `siloutil::plain`
 This class implements and supplements function from src/hooks/plain. 
 
-<br><div style="width:100%; display:block"><br></div>
+---
 
 ## Public Members
 
