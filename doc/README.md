@@ -25,7 +25,12 @@ Version number of the hook, adheres to semantic versioning
 ### `__init__` {#classsiloutil_1_1plain_1a48f56910eb6ca2849446a22503e98b7b}
 Here we invoke the construtor of the C++ class and use the exported setLocale() function to set language files' path and current locale 
 <dl>
-	<dt>Test</dt><dd>no</dd><dd>Second</dd>
+	<dt>Attributes</dt>
+	<dd>self: the self object </dd>
+	<dt>Returns</dt><dd>None</dd>
+	<dt>Protection</dt><dd>public</dd>
+	<dt>Static</dt><dd>no</dd>
+	<dt>Const</dt><dd>no</dd>
 </dl>
 
 ```python
