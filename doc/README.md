@@ -1,4 +1,4 @@
-# `siloutil::plain` {#top}
+# `siloutil::plain`
 ## Info
 This class implements and supplements function from src/hooks/plain. 
 
