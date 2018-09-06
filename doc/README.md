@@ -1,9 +1,7 @@
 # `siloutil::plain`
-## Info
 This class implements and supplements function from src/hooks/plain. 
 
 Found in file: siloutil/python\_package/siloutil/\_\_init\_\_.py
-<div style="text-align: right"><a href="#top">Back to top</a></div>
 
 ---
 ## Public Members
