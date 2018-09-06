@@ -43,3 +43,18 @@ Here we invoke the construtor of the C++ class and use the exported setLocale() 
 None
 
 ## Full Code
+```python
+class plain(plain_hook.siloutil):
+	## Versionnumber
+	#
+	# Version number of the hook, adheres to semantic versioning
+	version = [1, 0, 0]
+	## Constructor, sets locale
+	#
+	# Here we invoke the construtor of the C++ class and use the exported
+	# setLocale() function to set language files' path and current locale
+	# @param self the self object
+	def __init__(self):
+		plain_hook.siloutil.__init__(self)
+		self.setLocale("", _os.path.dirname(plain_hook.__file__))
+```
