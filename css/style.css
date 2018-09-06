@@ -518,6 +518,18 @@ form{
 #footer_wrap{
 	background:#212121
 }
+.toc {
+    width: 25%;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
 @media screen and (max-width: 992px){
 	img{
 		max-width:100%
@@ -596,6 +608,9 @@ form{
 		max-width:320px;
 		font-size:11px
 	}
+	.toc {
+		width:100%;
+	}
 }
 .navbar {
 	margin-top: 5px;
@@ -611,18 +626,6 @@ form{
 .tipue_search_content_text {
     display: inline-block !important;
     margin-left: 1em !important;
-}
-.toc {
-    width: 25%;
-    float: left;
-    background-color: white;
-    border-radius: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 5%;
-    margin-bottom: 5%;
 }
 hr {
    clear:both;
