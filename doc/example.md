@@ -36,7 +36,7 @@ Examples
 .
 
 .
-### `public def dummy(self)` {#anchor}
+### public def dummy(self) {#anchor}
 
 
 .
