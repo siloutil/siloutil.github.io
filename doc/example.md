@@ -36,4 +36,4 @@ Examples
 .
 
 .
-Anchro {#anchor}
+### `public def dummy(self)` {#anchor}
