@@ -1,6 +1,7 @@
 # `siloutil::plain`
+This class implements and supplements function from src/hooks/plain. 
 
-no info
+Found in file: siloutil/python\_package/siloutil/\_\_init\_\_.py
 
 ---
 ## Public Members
@@ -46,7 +47,7 @@ Here we invoke the construtor of the C++ class and use the exported setLocale() 
 <p/><div style="text-align: right"><a href="#top">Back to top</a></div>
 
 ---
-## Private Memers
+## Private Members
 None
 
 <div style="text-align: right"><a href="#top">Back to top</a></div>
