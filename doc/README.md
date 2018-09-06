@@ -27,7 +27,6 @@ Version number of the hook, adheres to semantic versioning
 ```python
 	version = [1, 0, 0]
 ```
-
 <p/><div style="text-align: right"><a href="#top">Back to top</a></div>
 
 ---
@@ -47,8 +46,7 @@ Here we invoke the construtor of the C++ class and use the exported setLocale() 
 		plain_hook.siloutil.__init__(self)
 		self.setLocale("", _os.path.dirname(plain_hook.__file__))
 ```
-
-<div style="text-align: right"><a href="#top">Back to top</a></div>
+<p/><div style="text-align: right"><a href="#top">Back to top</a></div>
 
 ---
 ## Private Memers
@@ -73,7 +71,6 @@ class plain(plain_hook.siloutil):
 		plain_hook.siloutil.__init__(self)
 		self.setLocale("", _os.path.dirname(plain_hook.__file__))
 ```
-
-<div style="text-align: right"><a href="#top">Back to top</a></div>
+<p/><div style="text-align: right"><a href="#top">Back to top</a></div>
 
 ---
