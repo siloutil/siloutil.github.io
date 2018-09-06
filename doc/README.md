@@ -1,7 +1,3 @@
-Test
-
-[Anchortest](example#anchor)
-
 # `siloutil::plain`
 ## Info
 This class implements and supplements function from src/hooks/plain. 
@@ -23,6 +19,7 @@ Member | Type | Description
 	<dt>Static</dt><dd>yes</dd>
 </dl>
 <details><summary>Code (extend)</summary>
+
 ```python
 dummy(arg)
 ```
