@@ -597,6 +597,11 @@ form{
 		font-size:11px
 	}
 }
+.navbar {
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
 .nav-link {
 	padding-left: 0px !important;
 }
