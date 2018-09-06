@@ -596,16 +596,17 @@ form{
 		font-size:11px
 	}
 }
-
 .nav-link {
 	padding-left: 0px !important;
 }
-
 .tipue_search_content_url{
 	display: none !important;
 }
-
 .tipue_search_content_text {
     display: inline-block !important;
     margin-left: 1em !important;
+}
+.toc {
+    border: 2px solid black;
+    padding: 25px;
 }
