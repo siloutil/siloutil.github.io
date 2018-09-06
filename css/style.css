@@ -513,7 +513,8 @@ form{
 	border-bottom:1px solid #111
 }
 #main_content{
-	padding-top:0px
+	padding-top:0px;
+	z-index: 10;
 }
 #footer_wrap{
 	background:#212121
