@@ -1,1 +1,2 @@
 Test
+[Anchortest](example#anchor)
