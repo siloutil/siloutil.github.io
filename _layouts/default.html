@@ -17,7 +17,6 @@
 </head>
 
   <body>
-  {% include toc.html html=content %}
   <a name="top"></a>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -71,6 +70,7 @@
 
     <div id="tipue_search_content" class="inner"></div>
       <section id="main_content" class="inner">
+        {% include toc.html html=content %}
         {{ content }}
       </section>
   </div>
