@@ -3,11 +3,9 @@
 This class implements and supplements function from src/hooks/plain. 
 
 Found in file: siloutil/python\_package/siloutil/\_\_init\_\_.py
-
 <div style="text-align: right"><a href="#top">Back to top</a></div>
 
 ---
-
 ## Public Members
 
 Member | Type | Description
@@ -15,6 +13,9 @@ Member | Type | Description
 [`version`](#classsiloutil_1_1plain_1a22961651ba4cf16cb567de62fa45a7a1)|list|Versionnumber. 
 [`__init__`](#classsiloutil_1_1plain_1a48f56910eb6ca2849446a22503e98b7b)| function |Constructor, sets locale. 
 
+<div style="text-align: right"><a href="#top">Back to top</a></div>
+
+---
 ### `version` {#classsiloutil_1_1plain_1a22961651ba4cf16cb567de62fa45a7a1}
 Version number of the hook, adheres to semantic versioning 
 <dl>
@@ -26,6 +27,9 @@ Version number of the hook, adheres to semantic versioning
 ```python
 	version = [1, 0, 0]
 ```
+<div style="text-align: right"><a href="#top">Back to top</a></div>
+
+---
 ### `__init__` {#classsiloutil_1_1plain_1a48f56910eb6ca2849446a22503e98b7b}
 Here we invoke the construtor of the C++ class and use the exported setLocale() function to set language files' path and current locale 
 <dl>
@@ -42,10 +46,15 @@ Here we invoke the construtor of the C++ class and use the exported setLocale() 
 		plain_hook.siloutil.__init__(self)
 		self.setLocale("", _os.path.dirname(plain_hook.__file__))
 ```
+<div style="text-align: right"><a href="#top">Back to top</a></div>
 
+---
 ## Private Memers
 None
 
+<div style="text-align: right"><a href="#top">Back to top</a></div>
+
+---
 ## Full Code
 ```python
 class plain(plain_hook.siloutil):
@@ -62,3 +71,6 @@ class plain(plain_hook.siloutil):
 		plain_hook.siloutil.__init__(self)
 		self.setLocale("", _os.path.dirname(plain_hook.__file__))
 ```
+<div style="text-align: right"><a href="#top">Back to top</a></div>
+
+---
