@@ -69,8 +69,8 @@
           </nav>
 
     <div id="tipue_search_content" class="inner"></div>
+    {% include toc.html html=content h_min=2 h_max=2 class=inner.toc %}
       <section id="main_content" class="inner">
-        {% include toc.html html=content h_min=2 %}
         {{ content }}
       </section>
   </div>
