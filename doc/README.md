@@ -1,8 +1,8 @@
 Test
+
 [Anchortest](example#anchor)
 
 # `siloutil::plain`
-
 ## Info
 This class implements and supplements function from src/hooks/plain. 
 
@@ -18,14 +18,11 @@ Member | Type | Description
 
 ### version {#classsiloutil_1_1plain_1a22961651ba4cf16cb567de62fa45a7a1}
 <dl>
-  <dt>Type</dt>
-  <dd>list</dd>
-  <dt>Initialization</dt>
-  <dd>[1,0,0]</dd>
+	<dt>Type</dt><dd>list</dd>
+	<dt>Initialization</dt><dd>[1,0,0]</dd>
+	<dt>Protection</dt><dd>public</dd>
+	<dt>Static</dt><dd>yes</dd>
 </dl>
-- Initialization: [1,0,0]
-- Protection:     public
-- Static:         yes
 
 ## Private Memers
 None
