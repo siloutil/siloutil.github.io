@@ -1,4 +1,4 @@
-# `siloutil::plain`
+# siloutil::plain
 This class implements and supplements function from <nobr>src/hooks/plain</nobr> 
 
 Found in file: <nobr>siloutil/python_package/siloutil/__init__.py</nobr>
