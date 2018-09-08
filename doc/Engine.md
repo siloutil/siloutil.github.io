@@ -28,11 +28,11 @@ Gets info about linked silo library
 </dl>
 
 ```cpp
-  This class wraps around the bare silo API functions
-*/
-class Engine {
-  private:
-    //! Silo version
+Engine::Engine() {
+    int Maj, Min, Pat, Pre;
+    DBVersionDigits(&Maj, &Min, &Pat, &Pre);
+    siloVersion = {Maj, Min, Pat, Pre};
+}
 ```
 ### `~Engine` {#class_engine_1a8ef7030a089ecb30bbfcb9e43094717a}
 Does nothing 
@@ -46,9 +46,9 @@ Does nothing
 </dl>
 
 ```cpp
-    std::vector<int> siloVersion;
-
-  public:
+Engine::~Engine() {
+    ;
+}
 ```
 ### `getSiloVersionStr` {#class_engine_1a2c65522239ee0eb869925f9b526ba166}
 Outputs a string of the silo version, spearated by dots 
@@ -62,12 +62,12 @@ Outputs a string of the silo version, spearated by dots
 </dl>
 
 ```cpp
-    /*!
-       Gets info about linked silo library
-    */
-    Engine();
-
-    //! Trivial destructor
+std::string Engine::getSiloVersionStr() {
+    std::string strVersion =       std::to_string( siloVersion.at(0) );
+    strVersion            += "." + std::to_string( siloVersion.at(1) );
+    strVersion            += "." + std::to_string( siloVersion.at(2) );
+    return strVersion;
+}
 ```
 ### `getSiloVersionInt` {#class_engine_1ac532ba729c7307c00eb05d3896076e7c}
 Outputs a string of the silo version, spearated by dots 
@@ -81,9 +81,9 @@ Outputs a string of the silo version, spearated by dots
 </dl>
 
 ```cpp
-       Does nothing
-    */
-   ~Engine();
+std::vector<int> Engine::getSiloVersionInt() {
+    return siloVersion;
+}
 ```
 <p/><div style="text-align: right"><a href="#top">Back to top</a></div>
 
